@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">رستوران</string>
+    <string name="title_section1">لیست سفارشات</string>
+    <string name="title_section2">رستوران های اخیرا دیده شده</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">سفارشات</string>
+    <string name="action_settings">Settings</string>
+    <string name="ops">Ooops</string>
+    <string name="ok">Ok</string>
+    <string name="ghazakade">غذا کده</string>
+    <string name="title_activity_ac__master">Ghazakade</string>
+    <string name="title_activity_ac__restaurant_item">رستوران</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_ac__orders">سفارشات</string>
+    <string name="title_activity_ac__send_order">ارسال سفارش</string>
+    <string name="title_activity_ac__contact">تماس با ما</string>
+    <string name="title_activity_ac__menu_item">منو</string>
+    <string name="title_activity_ac__rest_images_shower">نمایش تصاویر رستوران</string>
+
+</resources>

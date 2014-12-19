@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp" >
+
+        <ImageView
+            android:id="@+id/lvi_restimage_Image"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher" />
+
+        <com.edspace.restraunt.CustomTextView
+            android:id="@+id/lvi_restimage_txt_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/lvi_restimage_Image"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/lvi_restimage_Image"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="16dp"
+            android:gravity="right|bottom"
+            android:text="تیتر"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+</LinearLayout>

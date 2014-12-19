@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/lytContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytTitlebar"
+        android:orientation="vertical" >
+
+        <com.edspace.restraunt.CustomTextView
+            android:id="@+id/txtCaption"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="تنظیم شهر"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp" >
+
+            <com.edspace.restraunt.CustomTextView
+                android:id="@+id/fr_restmenu_txt_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|right"
+                android:text="در حال حاضر کدام شهر هستید ؟"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <com.edspace.restraunt.CustomTextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|right"
+                android:text="برای نمایش لیست رستوران ها نیاز است که شما شهر خود را انتخاب نمایید" />
+
+            <com.edspace.restraunt.CustomTextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|right"
+                android:layout_marginTop="10dp"
+                android:text="استان" />
+
+            <Spinner
+                android:id="@+id/choosecity_sp_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.edspace.restraunt.CustomTextView
+                android:id="@+id/TextView01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|right"
+                android:layout_marginTop="10dp"
+                android:text="شهر" />
+
+            <Spinner
+                android:id="@+id/choosecity_sp_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.edspace.restraunt.CustomButton
+                android:id="@+id/choosecity_btn_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:text="انتخاب" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lytTitlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageButton
+            android:id="@+id/imgSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <ImageButton
+            android:id="@+id/imgContact"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <com.edspace.restraunt.CustomTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="21dp"
+            android:layout_toLeftOf="@+id/imgContact"
+            android:shadowDx="0.5"
+            android:shadowDy="0.5"
+            android:shadowRadius="0.5"
+            android:text="@string/ghazakade"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

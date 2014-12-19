@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:context="com.edspace.restraunt.AC_Orders" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <com.edspace.restraunt.CustomButton
+            android:id="@+id/ac_order_btn_approve"
+            style="@style/btn_master"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تایید سفارش" />
+
+    </LinearLayout>
+
+</LinearLayout>

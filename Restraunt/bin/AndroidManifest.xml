@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.edspace.restraunt"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="com.edspace.restraunt.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.edspace.restraunt.permission.MAPS_RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Restheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCOrSXBXKwSCJlUj4j8AdpnAJw5rvrwHHE" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Ac_Master"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AC_LoginWithEmail"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".Ac_ChooseCity" >
+        </activity>
+        <activity
+            android:name=".ac_Master"
+            android:label="@string/title_activity_ac__master" >
+        </activity>
+        <activity
+            android:name=".AC_RestaurantItem"
+            android:label="@string/title_activity_ac__restaurant_item" >
+        </activity>
+        <activity
+            android:name=".AC_Orders"
+            android:label="@string/title_activity_ac__orders"
+            android:parentActivityName=".Ac_Master" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.edspace.restraunt.Ac_Master" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AC_SendOrder"
+            android:label="@string/title_activity_ac__send_order" >
+        </activity>
+        <activity
+            android:name=".AC_Contact"
+            android:label="@string/title_activity_ac__contact" >
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Holo.Light.Dialog"
+            android:name=".AC_MenuItem"
+            android:label="@string/title_activity_ac__menu_item" >
+        </activity>
+        <activity
+            android:name=".AC_RestImagesShower"
+            android:label="@string/title_activity_ac__rest_images_shower" >
+        </activity>
+    </application>
+
+</manifest>

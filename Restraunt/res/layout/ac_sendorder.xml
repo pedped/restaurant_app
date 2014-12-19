@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context="com.edspace.restraunt.AC_SendOrder" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.edspace.restraunt.CustomTextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="اطلاعات سفارش"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.edspace.restraunt.CustomTextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="برای دریافت سفارش خود، مشخصات زیر را به صورت کامل وارد نمایید" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical" >
+
+                <com.edspace.restraunt.CustomTextView
+                    android:id="@+id/textView2"
+                    style="@style/ac_items_title"
+                    android:layout_height="wrap_content"
+                    android:text="نام" />
+
+                <com.edspace.restraunt.CustomEditText
+                    android:id="@+id/ac_sendorder_et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:inputType="textPersonName"
+                    android:text="عطا الله زنگنه مدار" />
+
+                <com.edspace.restraunt.CustomTextView
+                    android:id="@+id/textView3"
+                    style="@style/ac_items_title"
+                    android:layout_height="wrap_content"
+                    android:text="شماره تماس" />
+
+                <com.edspace.restraunt.CustomEditText
+                    android:id="@+id/ac_sendorder_et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:text="09399477290" />
+
+                <com.edspace.restraunt.CustomTextView
+                    android:id="@+id/textView4"
+                    style="@style/ac_items_title"
+                    android:layout_height="wrap_content"
+                    android:text="آدرس" />
+
+                <com.edspace.restraunt.CustomEditText
+                    android:id="@+id/ac_sendorder_et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:inputType="textMultiLine"
+                    android:text="شیراز، ملاصدرا، خیابان جمهوری" />
+
+                <com.edspace.restraunt.CustomTextView
+                    android:id="@+id/TextView01"
+                    style="@style/ac_items_title"
+                    android:layout_height="wrap_content"
+                    android:text="کد اشتراک" />
+
+                <com.edspace.restraunt.CustomEditText
+                    android:id="@+id/ac_sendorder_et_subscribecode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:inputType="textMultiLine"
+                    android:text="2056" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.edspace.restraunt.CustomButton
+            android:id="@+id/ac_sendorder_btnsend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ارسال سفارش" />
+    </LinearLayout>
+
+</LinearLayout>

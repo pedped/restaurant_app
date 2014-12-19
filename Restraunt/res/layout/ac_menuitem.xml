@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.edspace.restraunt.AC_MenuItem" >
+
+    <ImageView
+        android:id="@+id/ac_menuitem_img_MenuItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:padding="12dp" >
+
+        <com.edspace.restraunt.CustomTextView
+            android:id="@+id/ac_menuitem_txt_MenuName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نام منو"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <com.edspace.restraunt.CustomTextView
+            android:id="@+id/ac_menuitem_txt_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="قیمت"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#d7072e" />
+
+        <com.edspace.restraunt.CustomTextView
+            android:id="@+id/ac_menuitem_txt_ServeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تعداد سرو" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:minHeight="128dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <com.edspace.restraunt.CustomTextView
+                    android:id="@+id/ac_menuitem_txt_Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="توضیحات" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.edspace.restraunt.CustomButton
+            android:id="@+id/ac_menuitem_btn_Order"
+            style="@style/btn_master"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="سفارش" />
+
+    </LinearLayout>
+
+</LinearLayout>

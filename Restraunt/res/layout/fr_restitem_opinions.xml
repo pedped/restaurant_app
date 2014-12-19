@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/fr_restopinion_list_Master"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp" >
+
+        <RatingBar
+            android:id="@+id/fr_restopinion_rb_Rate"
+            style="@style/cusotmratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:stepSize="1" />
+
+        <com.edspace.restraunt.CustomEditText
+            android:id="@+id/fr_restopinion_et_Message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="نظر خود را ارسال نمایید"
+            android:inputType="textMultiLine"
+            android:lines="3" >
+
+            <requestFocus />
+        </com.edspace.restraunt.CustomEditText>
+
+        <Button
+            android:id="@+id/fr_restopinion_btn_Send"
+            style="@style/btn_master"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ارسال" />
+
+    </LinearLayout>
+
+</LinearLayout>

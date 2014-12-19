@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference android:key="token" />
+    <EditTextPreference android:key="userid" />
+    <EditTextPreference android:key="firstname" />
+    <EditTextPreference android:key="lastname" />
+    <EditTextPreference android:key="username" />
+    <EditTextPreference android:key="level" />
+    <EditTextPreference android:key="cityid" />
+
+</PreferenceScreen>
